@@ -5,6 +5,31 @@
     font-family: 'Roboto Mono', monospace;
     
 }
+body {
+	background: linear-gradient(-95deg, #00417e, rgb(0, 115, 255));
+	background-size: 400% 400%;
+	animation: gradient 9s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+  25% {
+		background-position: 50% 25%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+  75% {
+		background-position: 25% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
 .container{
     width: 100%;
     height: 100vh;
@@ -19,28 +44,55 @@
     display: flex;
     align-items: center;
 }
+.SMText{
+  font-size: 30px;
+  cursor: pointer;
+}
+.SMText:hover{
+  font-size: 31px;
+  transition: 1s ease-in-out;
+  color: #000;
+}
 .logo{
-    width: 200px;
+    width: 400px;
+
     cursor: inherit;
 }
+
+.logotext{
+  font-size: 30px;
+  margin-left: 20px;
+  font-family: 'Courier New', Courier, monospace;
+}
+.descriptiontext{
+  font-family: 'Courier New', Courier, monospace;
+padding: 20px;
+padding-top: 50px;
+}
 .menu-icon{
-    width: 30px;
+    width: 40px;
     cursor: pointer;
     margin-left: 40px;
 }
 nav{
     flex: 1;
     text-align: right;
+    font-family: 'Roboto Mono', monospace;
+
 }
 nav ul li{
     list-style: none;
     display: inline-block;
     margin-left: 60px;
+    font-family: 'Roboto Mono', monospace;
+
 }
 nav ul li a{
     text-decoration: none;
     color: #fff;
     font-size: 20px;
+    font-family: 'Roboto Mono', monospace;
+
 }
 .row{
     display: flex;
@@ -53,6 +105,7 @@ nav ul li a{
     
 }
 h1{
+  font-family: 'Courier New', Courier, monospace;
     background: #CA4246;
   background-color: #CA4246;
   background: conic-gradient(
@@ -63,8 +116,8 @@ h1{
     #F18F43 50%, 
     #8B9862 50%, 
     #8B9862 66.666%, 
-    #476098 66.666%, 
-    #476098 83.333%, 
+    #f9fbff 66.666%, 
+    #ffffff 83.333%, 
     #A7489B 83.333%);
   
   background-size: 57%;
@@ -73,13 +126,28 @@ h1{
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; 
   
-  animation: rainbow-text-animation-rev 0.5s ease forwards;
+  animation: rainbow-text-animation-rev 3s ease-in infinite;
 
   cursor: pointer;
   font-size: 80px;
 }
 h1:hover{
-    animation: h1 0.5s ease forwards;
+    animation: h1 1s ease-out forwards infinite ;
+
+}
+
+.iam{
+  color: white;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+.text{
+  color: white;
+    border-right: 2px solid red;
+    font-size: 30px;
+    font-family: sans-serif;
+    color: rgb(255, 30, 0);
+    caret-color: red;
 }
 @keyframes h1 {
     0% {
@@ -118,7 +186,7 @@ p{
     line-height: 15px;
 }
 button{
-  background-color: #0af7ff;
+  background-color: #ffffff;
  
   
   padding: 15px 32px;
@@ -128,15 +196,18 @@ button{
   font-size: 20px;
   margin: 4px 2px;
   cursor: pointer;
-  border-radius: 20px;
+  border-radius: 10px;
 
   border-width: 5px;
-  border-color: #fff;
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
 }
 button:hover {
-  box-shadow: 0 12px 16px 0 rgb(0, 255, 255),0 17px 50px 0 rgb(0, 255, 255);
+  box-shadow: 0px 5px 5px 5px rgba(255, 255, 255, 0.493),5px 5px ;
+  background-color: black;
+  color: #fff;
+  border-radius: 30px;
+  transition: 0.9s;
 }
   
 

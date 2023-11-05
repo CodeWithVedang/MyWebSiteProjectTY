@@ -6,14 +6,14 @@
     <title>Student Management</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js" integrity="sha512-BdHyGtczsUoFcEma+MfXc71KJLv/cd+sUsUaYYf2mXpfG/PtBjNXsPo78+rxWjscxUYN2Qr2+DbeGGiJx81ifg==" crossorigin="anonymous"></script>
 </head>
-<body>
+<body class="css-selector">
     <video autoplay loop muted plays-inline class="back-video">
-        <source src="bgvideo.mp4" type="video/mp4">
     </video>
     <div class="container">
         <div class="navbar">
-<img src="logo.png" class="logo">
+<p class="SMText">Student Management</p>
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -29,10 +29,9 @@
     <div class="row">
         <div class="col">
           <h1>Wellcome to Student Management </h1>
-          <p>We're here to make your academic journey smoother. Whether you're a new student or a returning one,
-             this platform is designed to simplify your academic life. 
-             Log in to access your profile, courses, grades, and more. Stay informed with important announcements and never miss a deadline. </p>
-               <button type="button">Explore</button>
+          <div class="iam">we can </div>
+            <div class="text"></div>
+               <button type="button">Get started </button>
         </div>
        
         <div class="col">
@@ -48,6 +47,20 @@
 
         </div>
     </div>
-
+    <script>
+        var typing=new Typed(".text", {
+            strings: ["", "make your academic journey smoother", "simplify your academic life",],
+            typeSpeed: 100,
+            backSpeed: 40,
+            loop: true,
+        });
+     </script>
 </body>
 </html>
+
+
+
+
+
+
+
