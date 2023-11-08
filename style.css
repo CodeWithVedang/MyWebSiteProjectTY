@@ -6,29 +6,13 @@
     
 }
 body {
-	background: linear-gradient(-95deg, #00417e, rgb(0, 115, 255));
+	background: linear-gradient(-95deg, #f1f1f1, rgb(0, 0, 0));
 	background-size: 400% 400%;
 	animation: gradient 9s ease infinite;
 	height: 100vh;
 }
 
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-  25% {
-		background-position: 50% 25%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-  75% {
-		background-position: 25% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
+
 
 .container{
     width: 100%;
@@ -55,14 +39,14 @@ body {
 }
 .logo{
     width: 400px;
-
     cursor: inherit;
 }
 
 .logotext{
   font-size: 30px;
   margin-left: 20px;
-  font-family: 'Courier New', Courier, monospace;
+  cursor: pointer;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .descriptiontext{
   font-family: 'Courier New', Courier, monospace;
@@ -77,36 +61,41 @@ padding-top: 50px;
 nav{
     flex: 1;
     text-align: right;
-    font-family: 'Roboto Mono', monospace;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
 }
 nav ul li{
     list-style: none;
     display: inline-block;
     margin-left: 60px;
-    font-family: 'Roboto Mono', monospace;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
 }
 nav ul li a{
     text-decoration: none;
     color: #fff;
     font-size: 20px;
-    font-family: 'Roboto Mono', monospace;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
 }
 .row{
     display: flex;
-    height: 88%;
+    height: 50%;
     align-items: center;
+    text-align: center;
+    justify-content: center;
     
 }
 .col{
-    flex-basis: 50%;
-    
+   text-align: center; 
+   text-align: center;
+   justify-content: center;
 }
 h1{
-  font-family: 'Courier New', Courier, monospace;
-    background: #CA4246;
+  
+ 
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background: #CA4246;
   background-color: #CA4246;
   background: conic-gradient(
     #CA4246 16.666%, 
@@ -120,13 +109,12 @@ h1{
     #ffffff 83.333%, 
     #A7489B 83.333%);
   
-  background-size: 57%;
-  background-repeat: repeat;
   
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; 
   
   animation: rainbow-text-animation-rev 3s ease-in infinite;
+  margin-top: 150px;
 
   cursor: pointer;
   font-size: 80px;
@@ -138,16 +126,25 @@ h1:hover{
 
 .iam{
   color: white;
-    font-size: 30px;
-    font-family: sans-serif;
-}
+    font-size: 50px;
+    cursor: pointer;
+    text-align: center; 
+   text-align: center;
+   justify-content: center;
+    margin-top: 90px;
+
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
 .text{
   color: white;
-    border-right: 2px solid red;
+  text-align: center; 
+   text-align: center;
+   justify-content: center;
     font-size: 30px;
-    font-family: sans-serif;
+   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: rgb(255, 30, 0);
-    caret-color: red;
+    cursor: pointer;
+    
 }
 @keyframes h1 {
     0% {
@@ -197,7 +194,7 @@ button{
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 10px;
-
+margin-top: 50px;
   border-width: 5px;
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
@@ -212,36 +209,8 @@ button:hover {
   
 
   
-  .card {
-    width: 200px;
-    height: 230px;
-    display: inline-block;
-    border-radius: 10px;
-    padding: 15px 25px;
-    box-sizing: border-box;
-    cursor: pointer;
-    margin: 10px 15px;
-    text-decoration: white;
-    color: rgb(221, 221, 221);
-    background-position: center;
-    background-size: cover;
-    transition: transform 0.5s;
-    font-size: 20px;
-    
-    text-shadow: 0 0 5px rgb(16, 207, 25);
-}
-.card1{
-    background-image: url(Rectangle\ 5.png);
-    
-  
-}
-.card2{
-    background-image: url(Rectangle\ 6.png);
-  
-}
-.card:hover{
-    transform: translateY(-50px);
-}
+
+
 .back-video{
     position: absolute;
     right: 0;
